@@ -1,0 +1,95 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="500dp"
+    android:padding="15dp"
+    android:background="@color/mtrl_btn_transparent_bg_color"
+    >
+
+    <io.github.krtkush.lineartimer.LinearTimerView
+        android:id="@+id/linearTimer"
+        android:layout_width="150.0dp"
+        android:layout_height="150.5dp"
+        android:layout_centerInParent="true"
+        app:radius="30dp"
+        app:strokeWidth="10dp"
+        app:startingPoint="270"
+        app:initialColor="@android:color/holo_green_light"
+        app:progressColor="@android:color/holo_blue_light"
+        app:preFillPoint="0"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:layout_marginTop="0dp" 
+        />
+
+    <ImageView
+        android:contentDescription="Rider Image"
+        android:id="@+id/RiderImage"
+        android:src="@drawable/RiderImg"
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+       android:layout_marginTop="7dp" 
+        android:layout_marginBottom="10dp"
+        />
+
+     <TextView
+        android:id="@+id/RiderNametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rider Name"
+        android:textSize="15sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/RiderPickupAddresstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rider Location"
+        android:textSize="15sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:textColor="@color/greencolor"
+        />
+    <TextView
+        android:id="@+id/RiderDestinationtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rider Distnation"
+        android:textSize="15sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:textColor="#f20"
+        />
+
+    <TextView
+        android:id="@+id/Paymentmethodtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment method"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:textColor="#f90"
+        />
+
+    <TextView
+        android:id="@+id/cancelTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Trip"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#f10"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+</LinearLayout>

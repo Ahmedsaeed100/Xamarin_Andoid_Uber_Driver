@@ -1,0 +1,153 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appmainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorBackground"
+        android:minHeight="52dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp"
+        >
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/Onlinebtn"
+            android:background="@drawable/WagheetyOfflineroundbutton"
+            android:layout_gravity="center"
+            android:text="Go Online"
+            android:textColor="#ffe"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/Offlinebtn"
+            android:background="@drawable/WagheetyOnlineroundbutton"
+            android:layout_gravity="center"
+            android:text="Go OffLine"
+            android:textColor="#ffe"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+     <android.support.v7.widget.Toolbar
+        android:id="@+id/appmainToolbarRiderinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/fastScrollTrackDrawable"
+        android:minHeight="50dp" 
+        android:elevation="4dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/ridernameInHidenDelog"
+            android:text="Ahmed.S"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            />
+   
+        <ImageView
+            android:id="@+id/RiderLocation"
+            android:contentDescription="location"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_location"
+            />
+
+         <ImageView
+            android:id="@+id/CallRider"
+            android:contentDescription="call"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_phone"
+            />
+
+          <TextView
+            android:id="@+id/cancel_Trip"
+            android:text="Cancel"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:textColor="#f30"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+      
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:id="@+id/GoToRider"
+            android:background="@drawable/wagheetyonlineroundbutton"
+            android:layout_centerHorizontal="true"
+            android:text="Rider In Car"
+            android:textColor="#ffe"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            />
+
+         <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/StartTrip"
+            android:background="@drawable/wagheetyonlineroundbutton"
+            android:layout_centerHorizontal="true"
+            android:text="Start Trip"
+            android:textColor="#ffe"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/startlayout"
+            android:layout_alignParentTop="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+            android:id="@+id/bnve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/colorForeground"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
+            app:menu="@menu/bottomnav"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

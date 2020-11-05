@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wagheety-Driver", "Wagheety-Driver\Wagheety-Driver.csproj", "{EDCE80B7-3762-49CB-AB8D-DF3F1A48BB09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDCE80B7-3762-49CB-AB8D-DF3F1A48BB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCE80B7-3762-49CB-AB8D-DF3F1A48BB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCE80B7-3762-49CB-AB8D-DF3F1A48BB09}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EDCE80B7-3762-49CB-AB8D-DF3F1A48BB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCE80B7-3762-49CB-AB8D-DF3F1A48BB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDCE80B7-3762-49CB-AB8D-DF3F1A48BB09}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E59413CB-AF8E-426A-9D37-1E73221A63F6}
+	EndGlobalSection
+EndGlobal
